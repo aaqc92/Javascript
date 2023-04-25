@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body{
+            background-color: rebeccapurple;
+            color: white;
+            text-align: center;
+            font: normal 25px Arial;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1> Olá, Mundo ! </h1>
+    <hr>
+    <p>Primeira aula Javascript</p>
+        <script>
+            var n1 = Number.parseFloat(window.prompt('Digite um numero'))
+            var n2 = Number.parseFloat(window.prompt('Digite outro numero'))
+            var s = n1 + n2
+            window.alert('O valor digitado é : ' + n1)
+            window.alert('Outro valor digitado é: ' + n2)
+            window.alert('Soma dos dois valores é: ' + s)
+            window.alert(`${n1} + ${n2} = ${s}`)
+            //Usa-se `crase` para definitr template string exemplo:
+            var nome = window.prompt('Digite seu nome: ')
+            var idade = window.prompt('Digite sua idade: ')
+            var nota = window.prompt('Digite sua nota')
+            window.alert(`Seu nome é ${nome} , voce tem ${idade}, e tirou nota ${nota}`)
+
+            /* Conversão de stringo para numero:
+            Number.parseInt() 
+            Number.parseFloat()
+            `Usa-se crase` para definitr template string exemplo:
+             number + number para adição
+             string + string para concatenação*/
+        </script>
+</body>
+</html>
