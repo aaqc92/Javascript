@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula sobre DOM</title>
+    <style>
+        body{
+            background-color: rebeccapurple;
+            color: white;
+            font: normal 17pt Arial;
+        }
+        h2, h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando passos com DOM</h1>
+    <hr>
+    <h2>Aqui vai resultado</h2>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eos tenetur nesciunt et distinctio reiciendis eius illo debitis! Expedita provident ipsum in laboriosam similique mollitia voluptatem earum minus. Mollitia, aliquam! </p>
+    <p>Aprendendo usar o <strong><abbr title="Document Object Model(Modelo de Objeto)">DOM</abbr></strong> em JavaScript</p>
+    <div class="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(p1.innerHTML)
+        p1.style.color = 'red'
+        corpo.style.background = 'darkblue'
+        /*var d = window.document.getElementById('msg')
+        d.style.backgroundColor = 'black'
+        d.innerHTML = 'Estou mudando o conteúdo pelo comando innerHTML ou TEXT'*/
+        
+
+    </script>
+
+    <h3>Seletores</h3>
+    <h4>
+        <ul>
+            <li> MARCA - getElementsByTagName()</li> 
+            <li> ID - getElementById() </li>
+            <li> NOME - getElementsByName()</li>
+            <li> CLASSE - getElementClassName()</li>
+            <li> SELETOR - querySelector()</li>
+        </ul>
+    </h4>
+</body>
+</html>
